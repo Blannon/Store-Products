@@ -13,5 +13,5 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "Store Appp clean archtecture"
+rootProject.name = "Store App clean architecture"
 include(":app")

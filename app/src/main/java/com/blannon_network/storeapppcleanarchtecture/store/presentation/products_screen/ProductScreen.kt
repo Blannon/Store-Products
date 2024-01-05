@@ -15,6 +15,7 @@ import androidx.compose.ui.unit.dp
 import androidx.hilt.navigation.compose.hiltViewModel
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
 import com.blannon_network.storeapppcleanarchtecture.store.domain.model.Product
+import com.blannon_network.storeapppcleanarchtecture.store.presentation.products_screen.components.ProductCard
 import com.blannon_network.storeapppcleanarchtecture.store.presentation.util.components.LoadingDialog
 import com.blannon_network.storeapppcleanarchtecture.store.presentation.util.components.Top_Bar
 
@@ -44,8 +45,8 @@ fun ProductsContent(
             horizontalArrangement = Arrangement.spacedBy(10.dp),
             verticalItemSpacing = 10.dp)
         {
-            items(state.products){item: Product ->
-
+            items(state.products){ product ->
+                ProductCard(product = product)
 
             }
         }

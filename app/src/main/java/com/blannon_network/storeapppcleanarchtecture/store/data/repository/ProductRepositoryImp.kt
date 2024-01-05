@@ -6,8 +6,9 @@ import com.blannon_network.storeapppcleanarchtecture.store.data.remote.ProductAp
 import com.blannon_network.storeapppcleanarchtecture.store.domain.model.NetworkError
 import com.blannon_network.storeapppcleanarchtecture.store.domain.model.Product
 import com.blannon_network.storeapppcleanarchtecture.store.domain.repository.ProductRepository
+import javax.inject.Inject
 
-class ProductRepositoryImp constructor(
+class ProductRepositoryImp @Inject constructor(
     private val productApi: ProductApi
 ):ProductRepository {
 

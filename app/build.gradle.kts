@@ -84,9 +84,9 @@ dependencies {
 
     //dagger hilt
 
-    implementation("com.google.dagger:hilt-android:2.48.1")
+    implementation("com.google.dagger:hilt-android:2.50")
     implementation("androidx.hilt:hilt-navigation-compose:1.1.0")
-    kapt("com.google.dagger:hilt-android-compiler:2.44")
+    kapt("com.google.dagger:hilt-android-compiler:2.50")
 
     implementation("androidx.lifecycle:lifecycle-runtime-compose:2.6.2")
 }

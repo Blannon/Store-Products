@@ -20,6 +20,10 @@ class ProductViewModel @Inject constructor(
 
     private val _state = MutableStateFlow(ProductViewState())
     val state = _state.asStateFlow()
+
+    init {
+        getProducts()
+    }
     fun getProducts(){
         viewModelScope.launch {
             _state.update {
